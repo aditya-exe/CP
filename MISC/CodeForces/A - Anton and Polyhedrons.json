@@ -1,0 +1,39 @@
+{
+  "name" : "A - Anton and Polyhedrons",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "4\nIcosahedron\nCube\nTetrahedron\nDodecahedron\n",
+    "output" : "42\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "3\nDodecahedron\nOctahedron\nOctahedron\n",
+    "output" : "28\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/MISC/CodeForces",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "MISC.CodeForces.AntonandPolyhedrons",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2020.10.10",
+  "contestName" : "Codeforces Round #404 (Div. 2)",
+  "truncate" : true,
+  "inputClass" : "java.util.Scanner",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

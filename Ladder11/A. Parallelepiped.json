@@ -1,0 +1,39 @@
+{
+  "name" : "A. Parallelepiped",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "1 1 1\n",
+    "output" : "12\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "4 6 6\n",
+    "output" : "28\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/Ladder11",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "Ladder11.AParallelepiped",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2020.10.31",
+  "contestName" : "Codeforces - Codeforces Round #138 (Div. 2)",
+  "truncate" : true,
+  "inputClass" : "java.util.Scanner",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
