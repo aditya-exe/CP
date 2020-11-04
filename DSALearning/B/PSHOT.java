@@ -1,4 +1,4 @@
-package DSALearning.B;
+package CP.DSALearning.B;
 
 import java.io.*;
 import java.util.*;
@@ -8,7 +8,7 @@ import static java.lang.Math.*;
 import static java.util.Arrays.*;
 
 @SuppressWarnings("ALL")
-public class PSHOT {
+class PSHOT {
     public static void main(String[] $) throws IOException {
         PSHOT o = new PSHOT();
         o.main();
@@ -20,25 +20,29 @@ public class PSHOT {
         int T = in.ri();
         while (T-- > 0) {
             int n = in.ri();
-            char[] s = in.rline().toCharArray();
+            String s = in.rline();
+            int[] chars = new int[2 * n + 1];
+            for (int i = 1; i <= s.length(); i++) {
+                chars[i] = Integer.parseInt(String.valueOf(s.charAt(i-1)));
+            }
             int first = 0, second = 0;
             int leftA = n, leftB = n;
             int ans = 0;
-            for (int i = 0; i < 2 * n; i++) {
-                if (i % 2 == 0 && s[i] == '1') {
-                    first++;
-                } else if (i % 2 != 0 && s[i] == '1') {
-                    second++;
+            int i;
+            for (i = 1; i < chars.length; i++) {
+                if (i % 2 != 0) {
+                    first += chars[i];
+                    leftA--;
+                } else if (i % 2 == 0) {
+                    second += chars[i];
+                    leftB--;
                 }
-                if (i % 2 == 0) leftA--;
-                else leftB--;
 
                 if ((first > second + leftB) || (second > first + leftA) || (first == second && i == 2 * n)) {
-                    ans = i + 1;
                     break;
                 }
             }
-            out.prln(ans);
+            out.prln(i);
         }
     }
 

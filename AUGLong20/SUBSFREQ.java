@@ -1,4 +1,4 @@
-package AUGLong20;
+package CP.AUGLong20;
 
 import java.io.*;
 import java.util.*;
