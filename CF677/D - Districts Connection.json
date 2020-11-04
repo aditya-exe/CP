@@ -1,0 +1,26 @@
+{
+  "name" : "D - Districts Connection",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD"
+  },
+  "output" : {
+    "type" : "STANDARD"
+  },
+  "tests" : [ ],
+  "location" : "src/CF677",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "CF677.TaskD",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2020.10.20",
+  "contestName" : "Codeforces Round #677 (Div. 3)",
+  "truncate" : true,
+  "inputClass" : "java.util.Scanner",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false
+}

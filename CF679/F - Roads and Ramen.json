@@ -1,0 +1,26 @@
+{
+  "name" : "F - Roads and Ramen",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD"
+  },
+  "output" : {
+    "type" : "STANDARD"
+  },
+  "tests" : [ ],
+  "location" : "src/CF679",
+  "vmArgs" : "-Xmx512M",
+  "mainClass" : "Main",
+  "taskClass" : "CF679.TaskF",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2020.10.25",
+  "contestName" : "Technocup 2021 - Elimination Round 1",
+  "truncate" : true,
+  "inputClass" : "java.util.Scanner",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false
+}

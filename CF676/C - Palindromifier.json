@@ -1,0 +1,26 @@
+{
+  "name" : "C - Palindromifier",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD"
+  },
+  "output" : {
+    "type" : "STANDARD"
+  },
+  "tests" : [ ],
+  "location" : "src/CF676",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "CF676.TaskC",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2020.10.18",
+  "contestName" : "Codeforces Round #676 (Div. 2)",
+  "truncate" : true,
+  "inputClass" : "java.util.Scanner",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false
+}

@@ -1,0 +1,29 @@
+{
+  "name" : "CHEFWED",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ ],
+  "location" : "src/AUGLong20",
+  "vmArgs" : "-Xmx256m -Xss64m",
+  "mainClass" : "CHEFWED",
+  "taskClass" : "AUGLong20.CHEFWED",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2020.10.07",
+  "contestName" : "AUGLong20",
+  "truncate" : true,
+  "inputClass" : "java.util.Scanner",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
