@@ -1,0 +1,39 @@
+{
+  "name" : "B. Present from Lena",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "2\n",
+    "output" : "    0\n  0 1 0\n0 1 2 1 0\n  0 1 0\n    0\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "3\n",
+    "output" : "      0\n    0 1 0\n  0 1 2 1 0\n0 1 2 3 2 1 0\n  0 1 2 1 0\n    0 1 0\n      0\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/CP/Ladder11",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "CP.Ladder11.BPresentFromLena",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2020.11.05",
+  "contestName" : "Codeforces - Codeforces Beta Round #89 (Div. 2)",
+  "truncate" : true,
+  "inputClass" : "java.util.Scanner",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

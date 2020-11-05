@@ -10,25 +10,25 @@
     "fileName" : "output.txt"
   },
   "tests" : [ {
-    "input" : "1\nABC\n",
-    "output" : "ABC\n",
+    "input" : "001001\n",
+    "output" : "NO\n",
     "index" : 0,
     "active" : true
   }, {
-    "input" : "5\nA\nABA\nABA\nA\nA\n",
-    "output" : "A\n",
+    "input" : "1000000001\n",
+    "output" : "YES\n",
     "index" : 1,
     "active" : true
   } ],
-  "location" : "src/Ladder11",
+  "location" : "src/CP/Ladder11",
   "vmArgs" : "-Xmx256M",
   "mainClass" : "Main",
-  "taskClass" : "Ladder11.AFootball",
+  "taskClass" : "CP.Ladder11.AFootball2",
   "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
   "checkerParameters" : "",
   "testClasses" : [ ],
-  "date" : "2020.11.03",
-  "contestName" : "Codeforces - Codeforces Beta Round #42 (Div. 2)",
+  "date" : "2020.11.05",
+  "contestName" : "Codeforces - Codeforces Beta Round #77 (Div. 2 Only)",
   "truncate" : true,
   "inputClass" : "java.util.Scanner",
   "outputClass" : "java.io.PrintWriter",

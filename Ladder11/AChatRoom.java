@@ -8,48 +8,20 @@ import static java.lang.Math.*;
 import static java.util.Arrays.*;
 
 @SuppressWarnings("ALL")
-public class AKString {
+public class AChatRoom {
     public static void main(String[] $) throws IOException {
-        AKString o = new AKString();
+        AChatRoom o = new AChatRoom();
         o.main();
         out.flush();
         out.close();
     }
 
     void main() throws IOException {
-        int k = in.ri();
         String s = in.rline();
-        int[] freq = new int[26];
-        Arrays.fill(freq, 0);
-        for (int i = 0; i < s.length(); i++) {
-            freq[s.charAt(i) - 'a']++;
-        }
-        boolean flag = true;
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < freq.length; i++) {
-            if (freq[i] % k != 0) {
-                flag = false;
-                break;
-            }
-        }
-        if (flag) {
-            for (int i = 0; i < freq.length; i++) {
-                if (freq[i] != 0) {
-                    int count = 0;
-                    while (count != (freq[i] / k)) {
-                        sb.append((char) (i + 'a'));
-//                        out.prln(1);
-                        count++;
-                    }
-                }
-            }
-            for (int i = 0; i < k; i++) {
-                out.pr(sb);
-            }
-            out.prln();
-        } else out.prln(-1);
-
+        String regex = ".*(h+)(e+)(l+)(l+)(o+).*";
+        out.prYN(s.matches(regex));
     }
+    //helhcludoo
 
     static BufferedReader __in = new BufferedReader(new InputStreamReader(System.in));
     static PrintWriter __out = new PrintWriter(new OutputStreamWriter(System.out));
